@@ -3,10 +3,10 @@ require File.expand_path('../lib/jreject_rails/version', __FILE__)
 
 Gem::Specification.new do |gem|
   gem.authors       = ["Andrew Nesbitt"]
-  gem.email         = ["andrewnez@gmail.com"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
-  gem.homepage      = ""
+  gem.email         = ["andrew@forward.co.uk"]
+  gem.description   = %q{Asset Pipeline gem for jReject}
+  gem.summary       = %q{Easily add jReject plugin for warning users that you don't support certain browsers and prompting them to upgrade.}
+  gem.homepage      = "http://github.com/forward/jreject-rails"
 
   gem.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   gem.files         = `git ls-files`.split("\n")
@@ -14,6 +14,4 @@ Gem::Specification.new do |gem|
   gem.name          = "jreject_rails"
   gem.require_paths = ["lib"]
   gem.version       = JRejectRails::VERSION
-  
-  gem.add_dependency "rails", "~> 3.2.6"
 end

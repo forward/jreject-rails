@@ -1,6 +1,6 @@
 # JRejectRails
 
-TODO: Write a gem description
+Easily add jReject plugin for warning users that you don't support certain browsers and prompting them to upgrade.
 
 ## Installation
 
@@ -12,13 +12,35 @@ And then execute:
 
     $ bundle
 
-Or install it yourself as:
-
-    $ gem install jreject_rails
-
 ## Usage
 
-TODO: Write usage instructions here
+Add javascript sprocket include to application.js:
+
+     //= require jquery.reject
+
+Add css sprocket include to application.css:
+
+     *= require jquery.reject
+
+### Call it in your javascript code:
+
+javascript:
+
+    $(function() {
+      $.reject({
+        reject: {
+          msie5: true,
+          msie6: true,
+          msie7: true
+        }
+      });
+    });
+
+coffeescript:
+
+    $ ->
+      $.reject reject:
+        msie5: true, msie6: true, msie7: true
 
 ## Contributing
 
