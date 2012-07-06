@@ -1,4 +1,4 @@
-# Jreject::Rails
+# JRejectRails
 
 TODO: Write a gem description
 

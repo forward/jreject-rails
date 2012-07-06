@@ -13,7 +13,7 @@ Gem::Specification.new do |gem|
   gem.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
   gem.name          = "jreject-rails"
   gem.require_paths = ["lib"]
-  gem.version       = Jreject::Rails::VERSION
+  gem.version       = JRejectRails::VERSION
   
   gem.add_dependency "rails", "~> 3.2.6"
 end
