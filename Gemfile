@@ -1,4 +1,4 @@
 source 'https://rubygems.org'
 
-# Specify your gem's dependencies in jreject-rails.gemspec
+# Specify your gem's dependencies in jreject_rails.gemspec
 gemspec
